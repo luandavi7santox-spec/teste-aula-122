@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="bem vindo a nossa loja"></h1>
+
+
+    <div id="produto1">
+        <p>produto 1 - R$30,00</p>
+    </div>
+
+    <div id="produto1">
+        <p>produto 2 - R$35,00</p>
+    </div>
+
+    <div id="produto1">
+        <p>produto 3 - R$55,00</p>
+    </div>
+
+
+    <p id="paragrafo">nossa loja tem a melhor qualidade da regiao </p>
+
+    <button id="botao">comprar produto</button>
+    <p id="mensagem"></p>
+
+    <script>
+        document.getElementById("botao").onclick = function () {
+            document.getElementById("titulo").innerText = " bem vindo a nossa loja"
+        }
+
+        document.getElementById("botao").onmouseover = function () {
+            document.getElementById("botao").style.backgroundColor = "blue";
+        }
+        document.getElementById("botao").onmouseleave = function () {
+            document.getElementById("botao").style.backgroundColor = null;
+        }
+
+        document.getElementById("botao").onclick = function () {
+            document.getElementById("mensagem").innerText = "produto comprado com sucesso"
+        }
+
+    </script>
+</body>
+
+</html>
